@@ -38,3 +38,8 @@
 ; => #ch01.money.Money{:amount 1, :currency :usd}
 ; (make-money 1 (:eur currencies))
 ; => #ch01.money.Money{:amount 1, :currency #ch01.money.Currency{:divisor 100, :aym "EUR", :desc "Euro"}}
+
+(def zero-dollars (->Money 0 :usd))
+
+; zero-dollars
+; => #ch01.money.Money{:amount 0, :currency :usd}
