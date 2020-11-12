@@ -17,7 +17,7 @@
   "set up store with inventory"
   [items]
   (set-validator! inventory no-negative-values?)
-  (swap! inventory items))
+  (swap! inventory merge items))
 
 (defn grab
   "grab an item from the shelves"
